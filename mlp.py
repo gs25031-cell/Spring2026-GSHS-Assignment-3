@@ -42,7 +42,7 @@ def implement_xor() -> nn.Module:
     # Define a 2 layer MLP model for XOR
     # Implement your code here
     input_dim = 2
-    hidden_dim = 2
+    hidden_dim = 4
     output_dim = 1
 
     model = nn.Sequential(
@@ -57,7 +57,7 @@ def implement_xor() -> nn.Module:
     epochs = 2000
 
     # You can try different gradient descent optimizers
-    optimizer = optim.Adam(model.parameters(), lr=0.1)
+    optimizer = optim.Adam(model.parameters(), lr=0.01)
     # optimizer = optim.SGD(model.parameters(), lr=0.1)
 
     # Train the model
