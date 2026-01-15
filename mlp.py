@@ -79,4 +79,3 @@ def implement_xor() -> nn.Module:
         optimizer.step()
 
     return model
-
